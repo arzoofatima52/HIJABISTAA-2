@@ -1,0 +1,367 @@
+
+
+@font-face {
+    font-family: 'Passions Conflict';
+    src: url(font/PassionsConflict-Regular.ttf);
+}
+@font-face {
+    font-family: 'Italiano';
+    src: url(font/Italianno-Regular.ttf);
+}
+/* body{
+    margin: 0;
+ 
+} */
+
+.navbar{
+    background-color: #fde1cb ;
+    font-family: 'Italiano';
+    src: url(font/Italianno-Regular.ttf);
+}
+
+.nav{
+    background-color: #fde1cb;
+    box-shadow: 4px whitw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 67px;
+}
+.nav h1{
+    background-color: #fde1cb;
+    padding: 7px;
+    font-family: 'Passions Conflict';
+    float:left;
+    color: white;
+    margin: 0;
+    display: inline;
+    text-align: center;
+    padding-left: 80px;
+    font-size:70px;
+    cursor: pointer;
+    font-weight: 900;
+    text-shadow:0 0  3px rgb(255, 125, 125) ;
+    display: flex;
+}
+.nav h1:hover{
+    text-shadow: 0 0 3px white;
+}
+.nav a{
+    background-color: #fde1cb;
+    font-family: 'Passions Conflict';
+    color: white;
+    margin: 0;
+    display: inline-flex;
+    text-align: center;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+.text .sale{
+    font-family: 'Italiano';
+    text-shadow: 0 0 4px rgb(228, 228, 228);
+    transition: all 0.5s;
+    display: flex;
+    margin-left: 100px;
+}
+.text .sale:hover{
+    transform: scale(1.1);
+}
+.text .sale .button {
+    background-color: #ffffff;
+    border: none;
+    color:rgb(255, 125, 125);
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 8px 35px;
+    text-shadow:0 0 3px rgb(255, 125, 125); 
+    cursor: pointer;
+    font-family: 'Italiano';
+    opacity:0.9;
+    border-radius: 6px;
+}
+.text .sale .button:hover{
+    opacity:1;
+}
+.text{
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat; 
+    background-position:initial ;
+    background-attachment:fixed;
+    background-clip: text;
+    background-size: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4vw ;
+}
+.text h1{
+    margin-top: 30px;
+    font-size: 8vw;
+
+}
+/* .category{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.category1 img{
+    width: 500px;
+    height: 330px;
+    margin-top: 40px;
+    margin-left: 150px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+
+}
+.category1{
+    transition: all 1s;
+}
+.category1:hover{
+    transform: scale(1.07);
+  
+}
+.category2 img{
+    width: 500px;
+    height: 330px;
+    margin-top: 40px;
+    margin-right: 80px;
+    margin-left: 50px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    /* display: inline; */
+   /* float: left;
+   cursor: pointer;
+
+}
+.category2{
+    transition: all 1s;
+}
+.category2:hover{
+    transform: scale(1.07);
+  
+} */ 
+
+.text-center .rounded{
+    transition: all 1s;
+}
+
+.text-center .rounded:hover{
+    transform: scale(1.1);
+}
+.new{
+    background-image: url(images/newarrival.jpg);
+    background-repeat: no-repeat; 
+    background-position:initial ;
+    background-attachment:fixed;
+    background-clip: text;
+    background-size: 100%;
+    height: 500px;
+    display:flex;
+    font-size: 4vw;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.arrival h1{
+    margin-top: 80px;
+}
+.arrival{
+    font-size: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.new .arrival .button{
+    background-color: #ffffff;
+    margin-top: 20px;
+    border: none;
+    color:rgb(255, 125, 125);
+    text-decoration: none;
+    display: block;
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 8px 35px;
+    text-shadow:0 0 3px rgb(255, 125, 125); 
+    cursor: pointer;
+    font-family: 'Italiano';
+    opacity:0.9;
+    border-radius: 6px;
+}
+.new .arrival .button:hover{
+    opacity:1;
+}
+.new .arrival{
+    font-size: 4vw;
+    font-family: 'Italiano';
+    text-shadow: 0 0 4px rgb(0, 0, 0);
+    transition: all 1s;
+    display: flex;
+    margin-right: 150px;
+
+}
+.new .arrival:hover{
+    transform: scale(1.1);
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Italiano';
+}
+.head h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-bottom:  2px solid rgb(146, 146, 146);
+    font-family: 'Italiano';  
+}
+.products .one{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.products .one figure{
+    border: 5px solid rgb(255, 254, 254);
+    box-shadow: 6px 6px 6px -6px rgba(0,0,0,.2);
+    background-color: #fde1cb;
+    padding:30px 30px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.products .one figcaption{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 0 0 3px black;
+}
+.products .one figure:hover{
+    transform: scale(1.1);
+}
+
+.products .two{
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+.products .two figure{
+    border: 5px solid rgb(255, 254, 254);
+   box-shadow: 6px 6px 6px -6px rgba(0,0,0,.2);
+   background-color: #fde1cb;
+   padding:30px 30px;
+   transition: all 1s;
+   cursor: pointer;
+
+}
+
+.products .two figcaption{
+    font-size: 32px;
+   text-align: center;
+   font-weight: 700;
+   text-shadow: 0 0 0 3px black;
+}
+.products .two figure:hover{
+    transform: scale(1.1);
+}
+.products .three{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.products .three figure{
+    border: 5px solid rgb(255, 254, 254);
+   box-shadow: 6px 6px 6px -6px rgba(0,0,0,.2);
+   background-color: #fde1cb;
+   padding:30px 30px;
+   transition: all 1s;
+   cursor: pointer;
+}
+
+.products .three figcaption{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 0 0 3px black;
+}
+.products .three figure:hover{
+    transform: scale(1.1);
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.all .button{
+    background-color: #f7a7a7;
+    margin-top: 20px;
+    border: none;
+    color:white;
+    
+    text-decoration: none;
+    display: block;
+    font-size: 3vw;
+    font-weight: 500;
+    padding: 8px 35px;
+    text-shadow:0 0 5px #f8afaf; 
+    cursor: pointer;
+    font-family: 'Italiano';
+    opacity:0.7;
+    border-radius: 6px;
+    transition: all 0.7s;
+    transition-timing-function: ease-in-out;
+}
+.all .button:hover{
+    opacity:1;
+transform: scale(1.1);
+
+}
+
+@media only screen and (max-width:600px){
+
+    /* html{
+        width:600px;
+    }
+    .text{
+        height:400px ;
+        width: 130vw;
+    }
+    .new{
+        width: 130vw;
+        
+    }
+    .new .arrival{
+        height: 300px;
+    }
+
+    .all{
+        width: 130vw;
+
+    }
+    .head{
+        width: 130vw;
+
+    }
+    .products{
+        width: 130vw;
+
+    }{
+     */
+}
