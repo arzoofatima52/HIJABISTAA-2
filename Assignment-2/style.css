@@ -13,12 +13,8 @@
  
 } */
 
-.navbar{
-    background-color: #fde1cb ;
-    font-family: 'Italiano';
-    src: url(font/Italianno-Regular.ttf);
-}
 
+/* 
 .nav{
     background-color: #fde1cb;
     box-shadow: 4px whitw;
@@ -56,8 +52,14 @@
     text-align: center;
     padding-right: 20px;
     justify-content: center;
-}
+} */
 
+
+.navbar{
+    background-color: #fde1cb ;
+    font-family: 'Italiano';
+    src: url(font/Italianno-Regular.ttf);
+}
 .text .sale{
     font-family: 'Italiano';
     text-shadow: 0 0 4px rgb(228, 228, 228);
@@ -211,9 +213,13 @@
 .products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Italiano';
+    box-sizing: border-box;
+    min-height: 100vh;
+
+
 }
 .head h1{
     text-align: center;
@@ -228,7 +234,8 @@
     display: flex; 
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15px;
 
 }
 .products .one figure{
@@ -238,6 +245,7 @@
     padding:30px 30px;
     transition: all 1s;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .products .one figcaption{
@@ -245,11 +253,16 @@
     text-align: center;
     font-weight: 700;
     text-shadow: 0 0 0 3px black;
+    
 }
 .products .one figure:hover{
     transform: scale(1.1);
 }
+.products .one .image img{
 
+    object-fit: cover;
+}
+/* 
 .products .two{
     display: flex; 
     align-items: center;
@@ -301,7 +314,7 @@
 }
 .products .three figure:hover{
     transform: scale(1.1);
-}
+} */
 
 .all{
     display: flex;
@@ -334,34 +347,30 @@ transform: scale(1.1);
 
 }
 
-@media only screen and (max-width:600px){
-
-    /* html{
-        width:600px;
-    }
-    .text{
-        height:400px ;
-        width: 130vw;
-    }
-    .new{
-        width: 130vw;
-        
-    }
-    .new .arrival{
-        height: 300px;
-    }
-
-    .all{
-        width: 130vw;
-
-    }
-    .head{
-        width: 130vw;
-
-    }
-    .products{
-        width: 130vw;
-
-    }{
-     */
+.products .popup-image{
+    position: fixed;
+    top:0; left: 0;
+    background: rgb(0, 0, 0,.9);
+    height: 100%;
+    width:100%;
+    z-index: 100;
+    display: none;
+}
+.products .popup-image span{
+    position: absolute;
+    top:0; left: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.products .popup-image img{
+position: absolute;
+top:50%;left:50%;
+transform: translate(-50%, -50%);
+border: 5px solid #fff;
+border-radius: 5px;
+width: 350px;
+object-fit: cover;
 }
